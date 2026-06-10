@@ -284,18 +284,12 @@ footer {
 
 .scout-grade {
   position: absolute;
-
   top: 20px;
   right: 20px;
-
   background: orange;
-
   color: black;
-
   padding: 10px 15px;
-
   font-weight: bold;
-
   border-radius: 50%;
 }
 
@@ -378,4 +372,88 @@ footer {
 .athleticism {
   width: 88%;
   background: linear-gradient(90deg, #ef4444, #00e5ff);
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  /* Navigation */
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header {
+    position: static;
+  }
+  /* Hero Section */
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* Sections */
+  section {
+    padding: 50px 5%;
+  }
+
+  /* Profile */
+  .profile-hero img {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* Player Info Cards */
+  .player-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Strength Cards */
+  .strength-grid {
+    flex-direction: column;
+  }
+
+  /* General Cards */
+  .card-container {
+    flex-direction: column;
+  }
+
+  /* Skill Ratings */
+  .skill-ratings {
+    width: 100%;
+  }
+
+  .skill span {
+    font-size: 1rem;
+  }
+
+  /* Scouting Report */
+  .report-item {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .scout-grade {
+    position: static;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  /* 2K Player Card */
+  .player-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
 }
